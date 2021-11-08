@@ -1,0 +1,42 @@
+﻿.book-container {
+    background-color: $light-yellow;
+    width: 60vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 2rem;
+
+    * {
+        margin: .5rem;
+    }
+
+    .title {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        font-size: 2.5rem;
+        margin: 2rem;
+    }
+
+    .book-info-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        justify-content: center;
+        font-size: 1.75rem;
+        grid-column: 1 / span 2;
+        grid-row: 2;
+
+        .genre {
+            font-size: 1.5rem;
+        }
+    }
+
+    .review {
+        font-size: 1.25rem;
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+    button {
+        grid-row: 4;
+        margin: 2rem 4rem;
+    }
+}

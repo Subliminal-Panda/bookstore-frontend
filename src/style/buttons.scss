@@ -1,0 +1,15 @@
+﻿button {
+    font-size: 1.5rem;
+    color: $dark-blue;
+    padding: .25rem;
+    background-color: $green;
+    border: .2rem solid $dark-cyan;
+    border-radius: .75rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $cyan;
+        color: $dark-grey;
+        border: .2rem solid $grey;
+    }
+}

@@ -1,6 +1,7 @@
 ﻿import React from 'react';
 import Home from '../pages/home';
 import AddBook from '../pages/add-book';
+import EditBook from '../book/edit-book';
 
 const routes = {
     '/': () => <Home />,

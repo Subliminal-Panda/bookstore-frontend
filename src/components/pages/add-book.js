@@ -4,13 +4,13 @@ import { navigate } from "hookrouter";
 export default function AddBook(props) {
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
-    const [review, setReview] = useState('');
     const [genre, setGenre] = useState('');
+    const [review, setReview] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        console.log("this is a test from AddBook", title, author, review, genre)
+        console.log("this is a test from AddBook", title, author, genre, review)
 
         fetch('http://127.0.0.1:5000/book/add', {
             method: 'POST',
@@ -21,8 +21,8 @@ export default function AddBook(props) {
             body: JSON.stringify({
                 title,
                 author,
-                review,
                 genre,
+                review,
             })
         })
         .then(res => {
@@ -38,8 +38,8 @@ export default function AddBook(props) {
             <div className="input-container">
                 <input type="text" placeholder="Title" name="title"  onChange={(e) => setTitle(e.target.value)}/>
                 <input type="text" placeholder="Author" name="author" onChange={(e) => setAuthor(e.target.value)}/>
-                <input type="text" placeholder="Review" name="review" onChange={(e) => setReview(e.target.value)}/>
                 <input type="text" placeholder="Genre" name="genre" onChange={(e) => setGenre(e.target.value)}/>
+                <input type="text" placeholder="Review" name="review" onChange={(e) => setReview(e.target.value)}/>
             </div>
 
             <button type="submit">Submit</button>
