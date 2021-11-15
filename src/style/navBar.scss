@@ -1,9 +1,11 @@
 ﻿.navigation-container {
+    margin: 1rem 0 3rem;
     display: flex;
     gap: 3rem;
 
     .nav-link-wrapper {
-
+        display: flex;
+        gap: 3rem;
         a {
             font-size: 3rem;
             text-decoration: none;

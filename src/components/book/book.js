@@ -14,6 +14,7 @@ export default function Book(props) {
 
             <button onClick={() => props.handleDeleteClick(id)}>Delete</button>
             <button onClick={() => props.handleEditClick(props.book)}>Edit</button>
+            <div className="border-div" />
         </div>
     )
 }

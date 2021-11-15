@@ -1,4 +1,29 @@
-﻿.book-container {
+﻿.add-book-form, .signup-container {
+    background-color: $light-yellow;
+    width: 60vw;
+    display: grid;
+    justify-content: center;
+    padding: 2rem;
+
+    .input-container, form {
+
+        * {
+            margin: .5rem;
+        }
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        margin-top: 1rem;
+        width: 30%;
+        justify-self: center;
+    }
+}
+.book-container {
     background-color: $light-yellow;
     width: 60vw;
     display: grid;
@@ -36,7 +61,20 @@
         grid-row: 3;
     }
     button {
+        margin: 2rem 0 1rem;
         grid-row: 4;
-        margin: 2rem 4rem;
+        width: 8vw;
+        justify-self: center;
+        align-self: center;
     }
+}
+
+.border-div {
+    margin-top: 3rem;
+    grid-row: 5;
+    grid-column: 1 / span 2;
+    border-bottom: .1rem dotted $dark-grey;
+    align-self: center;
+    justify-self: center;
+    width: 45vw;
 }
